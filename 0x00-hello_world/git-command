@@ -1,3 +1,0 @@
-#!/bin/bash
-git add --all && git commit -m "C programming lang" && git push origin master
-
