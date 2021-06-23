@@ -1,0 +1,2 @@
+#!/bin/bash
+git add --all && git commit -m "compilation using gcc" && git push origin master
