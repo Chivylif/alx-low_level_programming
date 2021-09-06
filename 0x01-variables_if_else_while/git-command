@@ -1,0 +1,2 @@
+#!/bin/bash
+git add --all && git commit -m "if, else if and while statements" && git push origin master
