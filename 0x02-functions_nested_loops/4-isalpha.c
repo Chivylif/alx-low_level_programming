@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - Checks for lower case character
- * @c: Number to be chaecked
+ * _isalpha - Checks for alphabetic character
+ * @c: Value to be chaecked
  *
  * Return: Always 0.
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
         if (c > 64 && c <= 122)
         {
