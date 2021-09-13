@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- *_islower() -A function that prints 1 or 0 depending on wether c is lower or upper case
+ * _islower - Checks for lower case character
+ * @c: Number to be chaecked
  *
  * Return: Always 0.
  */
