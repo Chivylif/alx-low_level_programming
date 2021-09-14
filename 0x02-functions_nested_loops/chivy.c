@@ -6,23 +6,36 @@
  * Return: Return the 9 times table
  */
 
-void times_table(void)
-{
-	int i, j;
+void times_table(void)                                                                                                          
+{                                                                                                                               
+        int i, j;                                                                                                               
+                                                                                                                                
+        for (i = 0; i < 10; i++)                                                                                                
+        {                                                                                                                       
+                _putchar('0');                                                                                                  
+                                                                                                                                
+                for (j = 1; j < 10; j++)                                                                                        
+                {                                                                                                               
+                        int result;                                                                                             
+                                                                                                                                
+                        result = i * j;                                                                                         
+                        if (result > 9)                                                                                         
+                        {    
+                                _putchar(',');                                                                                  
+                                _putchar(' ');                                                                                  
+                                _putchar((result / 10) + '0');                                                                  
+                                _putchar((result % 10) + '0');                                                                  
+                                continue;                                                                                                    
+                        else                                                                                                    
+                        {                                                                                                       
+                                _putchar(',');                                                                                  
+                                _putchar(' ');                                                                                  
+                                _putchar(' ');
+				_putchar(result + '0');
 
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j < 10; j++)
-		{
-			int result;
-
-			result = i * j;
-			_putchar(result + '0');
-			if (j == 9)
-				continue;
-			_putchar(',');
-			_putchar(' ');
+                        }
 		}
 		_putchar('\n');
 	}
 }
+                        
