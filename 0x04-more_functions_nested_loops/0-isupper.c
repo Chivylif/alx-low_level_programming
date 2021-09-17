@@ -2,14 +2,14 @@
 
 /**
  * _isupper - checks if a character is in upper case
- * @n: character to be checked
+ * @c: character to be checked
  *
  * Return: Returns 1 or 0.
  */
 
-int _isupper(int n)
+int _isupper(int c)
 {
-	if (n <= 'Z')
+	if (c <= 'Z')
 	{
 		return (1);
 	}
