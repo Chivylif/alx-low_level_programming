@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * A program that prints from 1 to 100
+ * main -  A program that prints from 1 to 100
  * Return: Always 0.
  *
  */
@@ -9,24 +10,31 @@
 int main(void)
 {
 	int x;
+	char y[] = "FizzBuzz";
 
-	for (x = 0; x <= 100; x++)
+	for (x = 1; x <= 100; x++)
 	{
-		if ((x % 3) == 0)
+		if (x == 100)
 		{
-			printf("Fizz \n");
+			printf("Buzz");
 		}
-		else if ((x % 5) == 0)
+		else if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			printf("Buzz \n");
+			printf("%s ", y);
 		}
-		else if ((x % 3) == 0 && (x % 5) == 0)
+		else if (x % 3 == 0)
 		{
-			printf("FizzBuzz \n");
-		}	
+			printf("Fizz ");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz ");
+		}
 		else
 		{
-			printf("%d \n", x);
+			printf("%d ", x);
 		}
 	}
+	printf("\n");
+	return (0);
 }
