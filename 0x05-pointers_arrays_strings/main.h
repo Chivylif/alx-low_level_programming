@@ -1,6 +1,6 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
 void reset_to_98(int *n);
 
-#endif MAIN.H
+#endif /*MAIN_H*/
