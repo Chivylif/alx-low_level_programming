@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * *_strcpy - copies one string into another string
+ * _strcpy - copies one string into another string
  * @dest: One to be copied too
  * @src: one to be copied.
  *
- * Return: Void.
+ * Return: Dest.
  */
 
-void *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int i, j, len1 = 0;
 
-	for (i = 0; src[i] <= '\0'; i++)
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		dest = src[i];
+		len1++;
 	}
+	for (i = 0; i < len1; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
