@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * string_toupper - converts from lower case to upper case
@@ -10,17 +11,15 @@
 
 char *string_toupper(char *n)
 {
-	int x;
+	int x = 0;
 
-	for (x = 0; x != '\0'; x++)
+	while (n[x] != '\0')
 	{
-		if (n[x] >= 65 && n[x] <= 90)
-		{
-			n[x] = n[x] = 32;
-		}
-		else if (n[x] >= 97 && n[x] <= 122)
+		if (n[x] >= 97 && n[x] <= 122)
 		{
 			n[x] = n[x] - 32;
 		}
+		x++;
 	}
+	return (n);
 }
