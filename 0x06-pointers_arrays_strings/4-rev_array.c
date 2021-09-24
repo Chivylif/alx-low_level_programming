@@ -1,4 +1,4 @@
-#include "main.h
+#include "main.h"
 
 /**
  * reverse_array - Reverses and array of intergers
@@ -11,20 +11,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int x = n - 1;
+	int x = 0, y, rev;
 
-	while (x >= 0)
+	for (y = n - 1; y >= 0; y--, x++)
 	{
-		if (x == n - 1 || x == 0)
-		{
-			_putchar(a[x]);
-		}
-		else
-		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(a[x]);
-		}
-		x--;
+		rev = a[x];
+		a[x] = a[y];
+		a[y] = rev;
 	}
 }
