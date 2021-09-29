@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strspn - returns the number of the characters that 
+ * _strspn - returns the number of the characters that
  * are matched in the given string.
  * @s: string to be scanned
  * @accept: string that is scanned for
  *
- * Return: number of bytes in the initial segment of s 
+ * Return: number of bytes in the initial segment of s
  * which consist only of bytes from accept
  */
 
@@ -28,10 +28,8 @@ unsigned int _strspn(char *s, char *accept)
 				check = 1;
 			}
 		}
-
 		if (check == 0)
 			return (value);
 	}
-
 	return (value);
 }
