@@ -15,15 +15,17 @@ char *_strstr(char *haystack, char *needle)
 {
 	int x, y;
 
-	x = 0;
-	for (y = 0; haystack[y] != '\0'; y++)
+	for (x =0; haystack[x] != '\0'; x++)
 	{
-		if (needle[x] == haystack[y])
+		for (y = 0; needle[y] != '\0'; y++)
 		{
-			return (&haystack[y]);
-			x++;
+			if (haystack[x + y] != needle[y])
+				break;
+		}
+		if (!needle[y])
+		{
+			return (&haystack[x]);
 		}
 	}
 	return (NULL);
 }
-
