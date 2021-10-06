@@ -4,7 +4,7 @@
  * factorial - prints the factorial of a given number n
  * @n: The given number
  *
- * Returns: A number
+ * Return: A number
  */
 
 int factorial(int n)
