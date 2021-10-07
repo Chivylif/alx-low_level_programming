@@ -37,13 +37,13 @@ int check_ifprime(int x, int y)
 	int i;
 
 	i = x % y;
-	if (i == 0)
-	{
-		return (0);
-	}
-	else if (y == x)
+	if (y == x)
 	{
 		return (1);
+	}
+	else if (i == 0)
+	{
+		return (0);
 	}
 	else
 	{
