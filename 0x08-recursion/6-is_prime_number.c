@@ -1,5 +1,5 @@
 #include "main.h"
-int check_ifprime(int x. int y);
+int check_ifprime(int x, int y);
 
 /**
  *is_prime_number - checks if a number is prime
