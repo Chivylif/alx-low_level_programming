@@ -29,8 +29,8 @@ int helper(int x, int y)
 	{
 		return (helper(x, y + 1));
 	}
-	else 
+	else
 	{
-		return (helper(x, y - 1));
+		return (-1);
 	}
 }
