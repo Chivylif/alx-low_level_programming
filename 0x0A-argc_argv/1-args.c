@@ -19,5 +19,6 @@ int main(int argc, char *argv[])
 		count++;
 		i++;
 	}
-	return (count);
+	printf("%d\n", count);
+	return (0);
 }
