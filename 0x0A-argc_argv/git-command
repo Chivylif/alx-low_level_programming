@@ -1,0 +1,2 @@
+#!/bin/bash
+git add --all && git commit -m "0x0A-argc_argv comiits" && git push
