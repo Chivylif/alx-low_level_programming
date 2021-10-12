@@ -10,19 +10,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int result = 1;
+	int i, result;
 
-	if (argc < 3)
+	result = 1;
+	if (argc != 3)
 	{
 		printf("%s\n", "Error");
 		return (1);
 	}
 	else
 	{
-		for (i = 1; i <= argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			result = result * atoi(argv[i]);
 		}
-		return(result);
+		printf("%d\n", result);
 	}
+	return (0);
 }
