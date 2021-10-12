@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
 	index = 0;
 	while (index < argc)
 	{
-		printf("%s\n", argv[argc]);
+		printf("%s\n", argv[index]);
 		index++;
 	}
+	return (0);
 }
