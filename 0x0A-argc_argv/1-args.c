@@ -10,22 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, count;
+	(void) argv;
+	printf("%d\n", argc - 1);
 
-	i = 1;
-	if (i == argc)
-	{
-		printf("%d\n", 0);
-	}
-	else
-	{
-		count = 0;
-		while (i < argc)
-		{
-			count++;
-			i++;
-		}
-		printf("%d\n", count);
-	}
 	return (0);
 }
