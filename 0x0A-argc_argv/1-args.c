@@ -12,13 +12,20 @@ int main(int argc, char *argv[])
 {
 	int i, count;
 
-	count = 0;
-	i = 0;
-	while (i < argc)
+	i = 1;
+	if (i == argc)
 	{
-		count++;
-		i++;
+		printf("%d\n", 0);
 	}
-	printf("%d\n", count);
+	else
+	{
+		count = 0;
+		while (i < argc)
+		{
+			count++;
+			i++;
+		}
+		printf("%d\n", count);
+	}
 	return (0);
 }
