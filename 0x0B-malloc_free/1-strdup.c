@@ -16,10 +16,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	i = 0;
-	while (*str++)
+	for (i = 0; i <= *str; i++)
 	{
-		i++;
 	}
 	len = i;
 	newstr = malloc(len * sizeof(char));
