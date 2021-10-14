@@ -10,9 +10,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, i;
-
-	i = 0;
 	char *new_str, *array;
+	
+	i = 0;
 	
 	if ((s1 == NULL) || (s2 == NULL))
 		s1 = s2 = "";
