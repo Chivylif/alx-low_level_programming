@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, i;
-	char *new_str, *array;
+	char *new_str;
 	
 	i = 0;
 	
@@ -26,7 +26,6 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	new_str = malloc(sizeof(char) * (len1 + len2 + 1));
-	array = new_str;
 
 	if (new_str == NULL)
 		return (NULL);
@@ -45,5 +44,5 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	new_str[i] = '\0';
-	return (array);
+	return (new_str);
 }
