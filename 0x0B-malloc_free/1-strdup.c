@@ -12,7 +12,7 @@ char *_strdup(char *str)
 
 	int i, len, j;
 
-	if (str = NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -27,12 +27,9 @@ char *_strdup(char *str)
 	{
 		newstr[j] = str[j];
 	}
-	if (newstr = NULL)
+	if (newstr == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		return (newstr);
-	}
+	return (newstr);
 }
