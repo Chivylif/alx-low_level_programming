@@ -1,0 +1,2 @@
+#!/bin/bash
+git add --all && git commit -m "0x0C-more_malloc_free projects" && git push
