@@ -45,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		arr[co] = s2[co_2];
 		co++;
 	}
-	co++;
 	arr[co] = '\0';
 	return (arr);
 }
