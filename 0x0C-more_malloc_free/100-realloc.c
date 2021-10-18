@@ -37,20 +37,20 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 
 	ptr_copy = ptr;
-	mem = malloc(sizeof(*ptr_copy) * new_size);
+	str = malloc(sizeof(*ptr_copy) * new_size);
 
-	if (mem == NULL)
+	if (str == NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
 
-	filler = mem;
+	filler = str;
 
 	for (index = 0; index < old_size && index < new_size; index++)
 		filler[index] = *ptr_copy++;
 
 	free(ptr);
-	return (mem);
+	return (str);
 }
 
