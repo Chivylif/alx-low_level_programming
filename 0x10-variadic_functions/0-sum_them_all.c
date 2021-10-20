@@ -10,18 +10,20 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list x;
-	int sum = 0;
-	int i;
+	va_list valist;
+	unsigned int i, sum = 0;
 
 	if (n == 0)
 		return (0);
 
-	va_start(x, n);
+	va_start(valist, n);
+
 	for (i = 0; i < n; i++)
 	{
-		sum = sum + va_arg(x, const unsigned int);
+		sum += va_arg(valist, const unsigned int);
 	}
-	va_end(x);
+
+	va_end(valist);
+
 	return (sum);
 }
