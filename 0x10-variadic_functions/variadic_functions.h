@@ -2,6 +2,6 @@
 #define VARIADIC_FUNCTIONS
 
 int sum_them_all(const unsigned int n, ...);
-
+#include <stdarg.h>
 
 #endif
