@@ -8,11 +8,28 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int copy = n;
-	int index = 0;
+	int i = 0, count, k, temp;
 
-	while ((copy >>= 1) > 0)
-		index++;
-	while (index >= 0)
-		_putchar((n >> index--) & 1 ? '1' : '0');
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+
+	temp = n;
+
+	while (temp != 0)
+	{
+		i++;
+		temp = temp >> 1;
+	}
+
+	for (count = i - 1; count >= 0; count--)
+	{
+		k = n >> count;
+		if (k & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
