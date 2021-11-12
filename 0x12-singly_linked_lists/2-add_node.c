@@ -16,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 	unsigned int len = 0;
 	
 	if (str == NULL)
-		return len;
+		len = 0;
 
 	// calculate the lenth of str
 	while (str)
