@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - adds a node to the beginning of a list
@@ -16,6 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 	
 	if (str == NULL)
 		return len;
+
 	// calculate the lenth of str
 	while (str)
 	{
@@ -26,8 +28,10 @@ list_t *add_node(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return(NULL);
+
 	if (*head == NULL)
 		new_node->next = NULL;
+
 	new_node->len = len;
 	new_node->str = strdup(str);
 	new_node->next = (*head);
