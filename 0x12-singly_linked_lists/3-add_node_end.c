@@ -28,6 +28,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new_node->next = NULL;
+	new_node->len = len;
+	new_code->str = strdup(str);
 
 	if ((*head) == NULL)
 	{
@@ -37,11 +39,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		while (temp != NULL)
-		temp = temp->next;
-
-		new_node->len = len;
-		new_node=>str = strdup(str);
-		temp->next = new_node;
+			temp = temp->next;
 	}
+		temp->next = new_node;
 	return (new_node);
 }
