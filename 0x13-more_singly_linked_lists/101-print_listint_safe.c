@@ -7,6 +7,7 @@
  *
  * Return: size_t, number of nodes. Exits with 98 on failure
  */
+
 size_t print_listint_safe(const listint_t *h)
 {
 	size_t n_nodes = 0;
